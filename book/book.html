@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>
+    Book title
+</h1>
+<div class="container-outer">
+    <div class="container-inner">
+    <ul>
+    {% for book in books %}
+    <li>
+        {{ book.book_title }} is written by {{ book.book_author }}. Released on: {{ book.book_release_date }}. Description: {{ book.description }}
+    </li>
+    {% endfor %}
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>
